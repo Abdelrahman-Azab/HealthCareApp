@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@drawable/loginbackground2"
+    tools:context=".PersonData">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information Report"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+<!--Age-->
+    <TextView
+        android:id="@+id/age_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/age_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/age_text_box"
+        android:layout_toRightOf="@+id/age_text_box"
+        android:background="@android:color/white" />
+<!--Weight-->
+    <TextView
+        android:id="@+id/weight_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_text_box"
+        android:layout_margin="7dp"
+        android:text="Weight: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/weight_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weight_text_box"
+        android:layout_toRightOf="@+id/weight_text_box"
+        android:background="@android:color/white" />
+    <!--Height-->
+    <TextView
+        android:id="@+id/height_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Height: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/height_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/height_text_box"
+        android:layout_toRightOf="@+id/height_text_box"
+        android:layout_marginLeft="7dp"
+        android:background="@android:color/white" />
+    <!--Fats in body-->
+    <TextView
+        android:id="@+id/fat_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Fats in body (gm): "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fat_edit_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fat_text_box"
+        android:layout_toRightOf="@+id/fat_text_box"
+        android:layout_marginLeft="7dp"
+        android:background="@android:color/white" />
+    <!--Gender-->
+     <TextView
+        android:id="@+id/gender_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fat_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Gender: "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/male_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gender_text_box"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/gender_text_box"
+        android:text="Male"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/female_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gender_text_box"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/male_radio_button"
+        android:text="Female"
+        android:textSize="20sp"/>
+    <!--Athlete-->
+    <TextView
+        android:id="@+id/athlete_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Are you an athlete?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yesath_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/athlete_text_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/athlete_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/noath_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/athlete_text_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yesath_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+    <!--Vegetrian-->
+    <TextView
+        android:id="@+id/vegetarian_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/athlete_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Are you a vegetarian?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yesveg_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vegetarian_text_box"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/vegetarian_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/noveg_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vegetarian_text_box"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yesath_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+    <!--handicapped-->
+    <TextView
+        android:id="@+id/handicapped_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vegetarian_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Are you handicapped?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yeshan_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/handicapped_text_box"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/handicapped_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/nohan_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/handicapped_text_box"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yeshan_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+    <!--disease-->
+    <TextView
+        android:id="@+id/disease_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/handicapped_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you have any diseases?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yesdis_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disease_text_box"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/disease_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/nodis_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disease_text_box"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yesdis_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+
+
+
+    <!--allergies-->
+    <TextView
+        android:id="@+id/allergies_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disease_text_box"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you have any allergies?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yesall_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/allergies_text_box"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/allergies_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/noall_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/allergies_text_box"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yesall_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+
+    <!--supplements-->
+    <TextView
+        android:id="@+id/supplements_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allergies_text_box"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you take any supplement?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yessup_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/supplements_text_box"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/supplements_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/nosup_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_alignBottom="@+id/supplements_text_box"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yessup_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+
+
+    <!--disabilities-->
+    <TextView
+        android:id="@+id/disabilities_text_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplements_text_box"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you have any disabilities?"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/yesdisa_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disabilities_text_box"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/disabilities_text_box"
+        android:text="Yes"
+        android:textSize="20sp"/>
+    <RadioButton
+        android:id="@+id/nodisa_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/disabilities_text_box"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@+id/yesdisa_radio_button"
+        android:text="No"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

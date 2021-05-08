@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sleep">
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back"
+        android:layout_margin="8dp"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/sleep_gif"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+       android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/sleep" />
+
+    <TextView
+        android:id="@+id/alarmtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true"
+        android:text="No Alarm Set"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/timepicker_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Open Time Picker" />
+
+    <Button
+        android:id="@+id/cancel_alarm"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timepicker_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Cancel Alarm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="139dp"
+        android:text="Importance of Sleep:-"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="          Sleep is a vital, often neglected, component of every person’s overall health and well-being. Sleep is important because it enables the body to repair and be fit and ready for another day.
+Getting adequate rest may also help prevent excess weight gain, heart disease, and increased illness duration."
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

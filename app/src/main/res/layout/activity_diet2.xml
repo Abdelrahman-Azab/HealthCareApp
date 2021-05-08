@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet2">
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back"
+        android:layout_margin="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/gif1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/diet2" />
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif1"
+        android:layout_centerHorizontal="true"
+        android:text="Normal Weight"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_marginTop="35dp"
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/describe"
+        android:text="Breakfast( 521 Calories - 27g Protein - 69g Carbs - 18g Fat):"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:text="One whole-wheat English muffin with two tablespoons peanut butter-One orange- Large glass (12 ounces) non-fat milk - One cup of black coffee or herbal tea"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:text="Lunch (437 Calories - 59g Protein - 37g Carbs - 6g Fat):"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:text="A turkey sandwich (six ounces of turkey breast meat, large tomato slice, green lettuce and mustard on two slices of whole wheat bread - One cup low-sodium vegetable soup - Glass of water"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:text="Dinner ( 671 Calories - 44g Protein - 63g Carbs - 18g Fat):"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        />
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:text="Five-ounce sirloin steak - One cup mashed potatoes-One cup cooked spinach - One cup green beans - One glass beer (regular, lite or non-alcohol) - Sparkling water with lemon or lime slice"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/donediet"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/t6"
+        android:layout_centerHorizontal="true"
+        android:text="Done"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="22dp"/>
+
+</RelativeLayout>

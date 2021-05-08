@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet4">
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back"
+        android:layout_margin="8dp"
+        />
+    <ImageView
+        android:id="@+id/gif1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/diet4" />
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif1"
+        android:layout_centerHorizontal="true"
+        android:text="Obese Weight"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/describe"
+        android:text="Breakfast:"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:text="1/2 loaf of country bread + 4 sachets bean or a piece of cheese sliced + cucumber + orange juice or lemon without sugar"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:text="Lunch :"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:text="A plate of green salad consisting of (cucumber, lettuce, watercress, dill, parsley, coriander, carrots and 1 tomato) + 5 tablespoons of rice or pasta, but without adding fat or oil on it + you can eat a piece of red meat, chicken or medium-sized fish"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:text="Dinner :"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        />
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:text=" It should be light so you should eat 3 fruits + a can of skimmed yogurt"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/donediet"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/t6"
+        android:layout_centerHorizontal="true"
+        android:text="Done"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="22dp"/>
+</RelativeLayout>

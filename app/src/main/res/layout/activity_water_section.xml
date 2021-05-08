@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".water_section">
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back"
+        android:layout_margin="8dp"
+        />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/water" />
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif"
+        android:text=" 1. Water Protects Your Tissues, Spinal Cord, and Joints :"
+        android:textSize="16dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_1"
+        android:text="Water does more than just quench your thirst and regulate your body\'s temperature , it keeps the tissues in your body moist, according to the Mayo Clinic Health System. You know how it feels when your eyes, nose, or mouth gets dry? Keeping your body hydrated helps it retain optimum levels of moisture in these sensitive areas, as well as in the blood, bones, and brain. In addition, water helps protect the spinal cord, and it acts as a lubricant and cushion for your joints.
+"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:text="2. Water Can Help You Eat Healthier :"
+        android:textSize="16dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:text="It may be plain, but it’s powerful. In a study of more than 18,300 American adults, people who drank just 1 percent more water a day ate fewer calories and less saturated fat, sugar, sodium, and cholesterol, according to a study published in February 2016 in the Journal of Human Nutrition and Dietetics. Water may help fill you up, especially if you drink it before eating a meal, a notion that was backed up in a small study of 15 young, healthy participants that was published in October 2018 in Clinical Nutrition Research.
+"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

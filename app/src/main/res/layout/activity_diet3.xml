@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet3">
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_back"
+        android:layout_margin="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/gif1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/diet3" />
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif1"
+        android:layout_centerHorizontal="true"
+        android:text="Over Weight"
+        android:layout_marginTop="25dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/describe"
+        android:text="Breakfast:"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:text=" 1small cup of coffee/local tea with 1 sugar cube/One whole-wheat English muffin with two tablespoons peanut butter/One orange"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:text="Lunch :"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:text="2 boiled eggs + 400 grams cooked spinach + 1 tomatoes/A turkey sandwich (six ounces of turkey breast meat, large tomato slice, green lettuce "
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:text="Dinner :"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:text="200 g steak + 1 green salad dish and add lemon juice and olive oil/Five-ounce sirloin steak - One cup mashed potatoes-One cup cooked spinach - One cup green beans"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/donediet"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/t6"
+        android:layout_centerHorizontal="true"
+        android:text="Done"
+        android:background="@drawable/btn_bg"
+        android:layout_marginTop="22dp"/>
+</RelativeLayout>
